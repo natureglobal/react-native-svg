@@ -246,8 +246,8 @@ export type Circle = React.ComponentClass<CircleProps>;
 export interface ClipPathProps {
   id?: string;
 }
-export const ClipPath: React.ComponentClass<ClipPathProps>;
-export type ClipPath = React.ComponentClass<ClipPathProps>;
+export const ClipPath: React.ComponentClass<React.PropsWithChildren<ClipPathProps>>;
+export type ClipPath = React.ComponentClass<React.PropsWithChildren<ClipPathProps>>;
 
 export const Defs: React.ComponentClass<{}>;
 export type Defs = React.ComponentClass<{}>;
@@ -315,8 +315,8 @@ export interface LinearGradientProps {
   gradientTransform?: ColumnMajorTransformMatrix | string;
   id?: string;
 }
-export const LinearGradient: React.ComponentClass<LinearGradientProps>;
-export type LinearGradient = React.ComponentClass<LinearGradientProps>;
+export const LinearGradient: React.ComponentClass<React.PropsWithChildren<LinearGradientProps>>;
+export type LinearGradient = React.ComponentClass<React.PropsWithChildren<LinearGradientProps>>;
 
 export interface PathProps extends CommonPathProps {
   d?: string;
